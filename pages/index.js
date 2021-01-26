@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+
 import db from '../db.json';
 import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
@@ -25,8 +28,14 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const name = 'Breno';
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz - Modelo Base</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -34,7 +43,20 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <form onSubmit={function(infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+
+              console.log('Fazendo submissão por meio do react');
+
+              // router manda para próxima página
+            }}>
+              <input placeholder="Qual Seu Nome?"/>
+              <button type="submit">
+                Jogar [seuNome]
+              </button>
+            </form>
+            
           </Widget.Content>
         </Widget>
 
