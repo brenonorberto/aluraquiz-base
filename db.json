@@ -4,25 +4,37 @@
   "description": "Teste os seus conhecimentos sobre assuntos relacionados ao Homem de Ferro",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media.giphy.com/media/hHxTQkcjmHUTC/giphy.gif",
+      "title": "Qual o nome da inteligência Artificial do Tony Stark?",
       "description": "Essa é pra aquecer",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Jonh",
+        "Jarvis",
+        "Siri",
+        "Google Assistente"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/rgNQDcVkS4pj2/giphy.gif",
+      "title": "Quem é o usuário da armadura maquina de guerra?",
+      "description": "é muito fácil",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "James Rhodes",
+         "Robert Downey, Jr",
+         "Bruce Banner"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/UJ5I7921pAOEU/giphy.gif",
+        "title": "Quem ajudou a construir a 1º armadura de Tony Stark?",
+      "description": "essa é antiga",
+      "answer": 0,
+      "alternatives": [
+         "Wong Chu",
+         "Jery Li",
+         "Ho Yinsen"
       ]
     }
   ],
