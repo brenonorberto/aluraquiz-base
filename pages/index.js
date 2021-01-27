@@ -29,12 +29,13 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   const router = useRouter();
-  const name = 'Breno';
+  const [name, setName] = React.useState('');
+
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Alura Quiz - Modelo Base</title>
+        <title>Alura Quiz - Iron Man</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -51,9 +52,13 @@ export default function Home() {
 
               // router manda para próxima página
             }}>
-              <input placeholder="Qual Seu Nome?"/>
-              <button type="submit">
-                Jogar [seuNome]
+              <input onChange={function(infosDoEvento) {
+                setName(infosDoEvento.target.value);
+
+              }}
+              placeholder="Qual Seu Nome?"/>
+              <button type="submit" disabled={name.length === 0}>
+                Jogar {name}
               </button>
             </form>
             
@@ -64,7 +69,7 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>https://github.com/brenonorberto/aluraquiz-base</p>
           </Widget.Content>
         </Widget>
         <Footer />
