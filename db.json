@@ -7,7 +7,7 @@
       "image": "https://media.giphy.com/media/hHxTQkcjmHUTC/giphy.gif",
       "title": "Qual o nome da inteligência Artificial do Tony Stark?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
         "Jonh",
         "Jarvis",
@@ -30,7 +30,7 @@
       "image": "https://media.giphy.com/media/UJ5I7921pAOEU/giphy.gif",
         "title": "Quem ajudou a construir a 1º armadura de Tony Stark?",
       "description": "essa é antiga",
-      "answer": 0,
+      "answer": 2,
       "alternatives": [
          "Wong Chu",
          "Jery Li",
